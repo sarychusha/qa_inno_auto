@@ -73,5 +73,6 @@ pip install -r /path/to/requirements.txt
 Тест-кейсы лежат здесь: https://chlist.sitechco.ru/project/25806/checklist
 
 Отчет Allure:
+
 ![image](https://user-images.githubusercontent.com/58331810/135645364-1c9f834d-8113-4138-9649-7d2ca184710e.png)
 

@@ -6,7 +6,10 @@ CI:
 [![Build Status](https://app.travis-ci.com/sarychusha/qa_inno_auto.svg?branch=main)](https://app.travis-ci.com/sarychusha/qa_inno_auto)
 
 Цель: Автоматизация тестирования UI
+
+
 Задачи:
+
  • Написание автотестов
 
  • Настройка и запуск тестов в CI

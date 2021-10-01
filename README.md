@@ -75,5 +75,19 @@ pip install -r /path/to/requirements.txt
 
 Отчет Allure:
 
+Чтобы сгенерировать Allure отчет после прогона тестов необходимо выполнить следующие шаги:
+
+- Скачать (установить) Allure commandline application на свою операционную систему.
+
+- Создать данные о выполнении тестов, на основании которых будут сгенерированы отчеты.
+Для этого нужно запускать тесты следующей командой в терминале:
+pytest --alluredir=allure_reports
+
+- Установить npm install -g allure-commandline --save-dev4
+
+- После прогона тестов останется только сгенерировать отчет командой в терминале:
+allure serve allure_reports
+(отчет будет представлен на страничке браузера)
+
 ![image](https://user-images.githubusercontent.com/58331810/135645364-1c9f834d-8113-4138-9649-7d2ca184710e.png)
 

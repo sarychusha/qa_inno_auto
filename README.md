@@ -62,8 +62,12 @@ pip install -r /path/to/requirements.txt
 
 Тестовая документация:
 1. Тест-кейсы на авторизацию
+Запуск в файле: tests/auth/test_auth.py
 2. Тест-кейсы на регистрацию
+Запуск в файле: tests/sign_up/test_sign_up.py
 3. Тест-кейсы на добавление и удаление курса
+Запуск в файле: tests/create_course/test_course_creation.py
 4. Тест-кейсы на редактирование информации пользователя
+Запуск в файле: \tests\personal_data\test_personal_data.py
 
 Тест-кейсы лежат здесь: https://chlist.sitechco.ru/project/25806/checklist

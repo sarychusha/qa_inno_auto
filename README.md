@@ -71,3 +71,6 @@ pip install -r /path/to/requirements.txt
 Запуск в файле: \tests\personal_data\test_personal_data.py
 
 Тест-кейсы лежат здесь: https://chlist.sitechco.ru/project/25806/checklist
+
+Отчет Allure:
+http://26.58.156.206:65531/index.html

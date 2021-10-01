@@ -26,25 +26,6 @@ class TestPersonalData:
         app.personal_data.edit_personal_data(personal_data)
         assert app.personal_data.is_changed(), "Personal data not changed!"
 
-    @pytest.mark.parametrize("field", ["name", "last_name", "email"])
-    def test_edit_basic_personal_data_without_required_field(self, app, auth, field):
-        """
-        Steps
-        1. Open auth page
-        2. Auth with valid data
-        3. Check auth result
-        4. Go to page with editing personal data
-        5. Edit basic personal data with invalid data
-        6. Check editing is not successfully
-        """
-        app.login.go_to_editing_personal_data()
-        personal_data = PD.random()
-        setattr(personal_data, field, "")
-        app.personal_data.edit_personal_data(personal_data)
-        assert (
-            not app.personal_data.is_changed()
-        ), "Personal data should not be changed!"
-
     @pytest.mark.parametrize("email", ["nilluziafmail.ru", "@mail.ru", "111"])
     def test_edit_basic_personal_data_with_incorrect_email(self, app, auth, email):
         """

@@ -24,7 +24,7 @@ class PersonalDataConstants:
 
 
 class CourseConstants:
-    DELETED_COURSE = "Был полностью удален"
+    DELETED_COURSE = "был полностью удален"
 
 
 class CreateCourseConstants:

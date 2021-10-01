@@ -21,7 +21,6 @@ class PersonalData:
         country_code=None,
         about=None,
         url=None,
-        image_url=None,
         name_phonetic=None,
         lastnamephonetic=None,
         middlename=None,
@@ -33,7 +32,6 @@ class PersonalData:
         phone2=None,
         address=None,
         tag=None,
-        user_image_description=None,
     ):
         self.name = name
         self.last_name = last_name
@@ -45,7 +43,6 @@ class PersonalData:
         self.country_code = country_code
         self.about = about
         self.url = url
-        self.image_url = image_url
         self.name_phonetic = name_phonetic
         self.lastname_phonetic = lastnamephonetic
         self.middlename = middlename
@@ -57,7 +54,6 @@ class PersonalData:
         self.phone2 = phone2
         self.address = address
         self.tag = tag
-        self.user_image_description = user_image_description
 
     @staticmethod
     def random():
@@ -73,7 +69,6 @@ class PersonalData:
         country_code = fake.country_code()
         about = fake.text(max_nb_chars=200)
         url = fake.url()
-        image_url = fake.image_url()
         name_phonetic = name
         lastnamephonetic = last_name
         middlename = fake.middle_name()
@@ -85,7 +80,6 @@ class PersonalData:
         phone2 = fake.phone_number()
         address = fake.address()
         tag = fake.word()
-        user_image_description = fake.text(max_nb_chars=20)
         return PersonalData(
             name,
             last_name,
@@ -97,7 +91,6 @@ class PersonalData:
             country_code,
             about,
             url,
-            image_url,
             name_phonetic,
             lastnamephonetic,
             middlename,
@@ -109,5 +102,4 @@ class PersonalData:
             phone2,
             address,
             tag,
-            user_image_description,
         )

@@ -53,8 +53,7 @@ def pytest_addoption(parser):
         "--headless",
         action="store",
         default="true",
-        help="enter 'true' if you want run "
-        "tests in headless mode of browser,\n"
+        help="enter 'true' if you want run tests in headless mode of browser,\n"
         "enter 'false' - if not",
     ),
     parser.addoption(

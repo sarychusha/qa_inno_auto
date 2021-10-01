@@ -5,7 +5,6 @@ CI:
 
 [![Build Status](https://app.travis-ci.com/sarychusha/qa_inno_auto.svg?branch=main)](https://app.travis-ci.com/sarychusha/qa_inno_auto)
 
-
 Цель: Автоматизация тестирования UI
 Задачи:
  • Написание автотестов
@@ -52,3 +51,23 @@ CI:
  • Для тестирования используется фреймворк pytest
 
  • Результатом тестирования является сгенерированный отчет. Он может быть доступен в travis-ci (https://travis-ci.org/) как артефакт, так и на локальной машине.
+
+Установка:
+
+- Создайте отдельную директорию на локальном компьютере
+- Склонируйте этот репозиторий
+- Откройте проект
+- Установите все пакеты, которые указаны в файле requirements.txt
+pip install -r /path/to/requirements.txt
+
+Тестовая документация:
+1. Тест-кейсы на авторизацию
+Запуск в файле: tests/auth/test_auth.py
+2. Тест-кейсы на регистрацию
+Запуск в файле: tests/sign_up/test_sign_up.py
+3. Тест-кейсы на добавление и удаление курса
+Запуск в файле: tests/create_course/test_course_creation.py
+4. Тест-кейсы на редактирование информации пользователя
+Запуск в файле: \tests\personal_data\test_personal_data.py
+
+Тест-кейсы лежат здесь: https://chlist.sitechco.ru/project/25806/checklist
